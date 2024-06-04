@@ -1,6 +1,6 @@
 # Benevolat
 
-This project a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3 et le serveur Node.js version 20.12.2
+Ce project a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3 et le serveur Node.js version 20.12.2
 
 ## Description
 
