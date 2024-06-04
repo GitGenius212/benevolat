@@ -1,0 +1,45 @@
+<!-- {
+    "CustomerID": 1,
+    "name": "Cardinal",
+    "lastName": "Tom B. Erichsen",
+    "phone": "514-986-4785",
+    "username": "Stavanger",
+    "password": "4006",
+    "address": "Skagen 21"
+} -->
+
+<div class="card mt-5 me-5 ms-5 mb-3" *ngIf="customer">
+    <div class="card-header">
+            <p class="fw-bold d-inline">CustomerID </p>: {{customer.CustomerID}}
+    </div>
+
+    <div class="card-body">
+        <span class="d-flex mb-2">
+          <p class="fw-bold me-2">Name:</p>
+          <p>{{customer.name}}</p>
+        </span>
+        <span class="d-flex mb-2">
+          <p class="fw-bold me-2">LastName:</p> 
+          <p>{{customer.lastName}}</p>
+        </span>
+        <span class="d-flex mb-2">
+          <p class="fw-bold me-2">Phone:</p> 
+          <p>{{customer.phone}}</p>
+        </span>
+        <span class="d-flex mb-2">
+          <p class="fw-bold me-2">Username:</p> 
+          <p>{{customer.username}}</p>
+        </span>
+        <span class="d-flex mb-2">
+          <p class="fw-bold me-2">Password:</p> 
+          <p>{{customer.password}}</p>
+        </span>
+        <span class="d-flex mb-2">
+          <p class="fw-bold me-2">Address:</p> 
+          <p>{{customer.address}}</p>
+        </span>
+      </div>
+      
+</div>
+
+<button type="button" class="btn btn-primary ms-5" (click)="returnPageCustomers()">Return</button>

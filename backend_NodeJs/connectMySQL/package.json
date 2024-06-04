@@ -1,0 +1,30 @@
+{
+  "name": "connectmysql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node .\\node_modules\\typescript\\bin\\tsc && node dist\\index.js",
+    "dev": "node .\\node_modules\\concurrently\\dist\\bin\\concurrently.js -n \"TS, Node \" \"node .\\node_modules\\typescript\\bin\\tsc --watch \" \"node .\\node_modules\\nodemon\\bin\\nodemon.js dist/index.js \""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/mysql": "^2.15.26",
+    "blob-util": "^2.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7",
+    "sequelize": "^6.37.3"
+  }
+}

@@ -1,0 +1,54 @@
+<!-- <div class="alert alert-success alert-dismissible">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <strong>Success!</strong> This alert box could indicate a successful or positive action.
+</div> -->
+<div class="container mt-3 vh-100">     
+  <div class=" d-flex justify-content-center align-items-center h-75">
+    <table class="table table-borderless table-striped ">
+      <thead class="table-primary">
+        <!-- {
+            "CustomerID": 1,
+            "name": "Cardinal",
+            "lastName": "Tom B. Erichsen",
+            "phone": "514-986-4785",
+            "username": "Stavanger",
+            "password": "4006",
+            "address": "Skagen 21"
+        } -->
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Lastname</th>
+          <th>Phone</th>
+          <th>Username</th>
+          <th>Address</th>
+          <th>Details</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of appState.customerState.customers">
+          <td>{{customer.CustomerID}}</td>
+          <td>{{customer.name}}</td>
+          <td>{{customer.lastName}}</td>
+          <td>{{customer.phone}}</td>
+          <td>{{customer.username}}</td>
+          <td>{{customer.address}}</td>
+          <td>
+            <button type="button" class="btn btn btn-outline-success" (click)="handleDetailCustomer(customer)">View</button>
+          </td>
+          <td>
+            <button type="button" class="btn btn btn-outline-warning" (click)="handleEditCustomer(customer)">Edit</button>
+          </td>
+          <td>
+            <button type="button" class="btn btn btn-outline-danger" (click)="handleDelete(customer)">Delete</button>
+          </td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>     
+    
+  </div>

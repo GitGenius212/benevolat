@@ -1,0 +1,56 @@
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6 ms-3">
+            <h1>Page Edit</h1>
+            <!-- {{productFormGroup.value | json}} -->
+            <form [formGroup]="productFormGroup" *ngIf="productFormGroup">
+                <div class="mb-3 mt-3">
+                    <label for="name" class="form-label" >Name:</label>
+                    <input type="text" formControlName="name"  class="form-control" id="name" placeholder="Enter name" name="name">
+                </div>
+                
+                <div class="mb-3 mt-3">
+                  <label for="customRange3" class="form-label">Price: {{price.value}}$</label>
+                  <input type="range" formControlName="price"  class="form-range" min="0" max="1000" step="0.01" id="customRange3">
+                </div>
+                
+                <div class="mb-3 mt-3">
+                    <label for="formFile" class="form-label">Photo</label>
+                    <input class="form-control" type="file"   id="formFile" (change)="onFileChange($event)">
+                </div>
+                
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Status:</label>
+                    <select formControlName="status"  class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="{{status}}"  *ngFor="let status of statusProduct">{{status}}</option>
+                        
+                    </select>
+                </div>
+
+                <div class=" d-flex justify-content-between" >
+                    <button type="submit" class="btn btn-secondary mb-2"  (click)="returnToPageProducts()">Return</button>
+                    <button type="submit" class="btn btn-primary mb-2" [disabled]="productFormGroup.invalid" (click)="updateProduct()">Update</button>
+                </div>
+
+            </form>
+            
+    
+            
+               
+        </div>
+    
+        <div class="col-5" >
+                <h3 *ngIf="imageUrl">Image uploaded : </h3>
+                <h3 *ngIf="photo && !imageUrl">Image  : </h3>
+                <span   class="d-flex flex-wrap border align-content-center justify-content-center">
+                    <p *ngIf="!imageUrl && !photo">Image</p>
+                    <img *ngIf="imageUrl" class="img-fluid"  src="data:image/jpeg;base64,{{imageUrl}}" alt="Photo of upload file"/>
+                    <img *ngIf="photo && !imageUrl" class="img-fluid"  src="data:image/jpeg;base64,{{photo.value}}" alt="Photo of upload file"/>
+                </span>
+        </div>
+    </div>
+</div>
+

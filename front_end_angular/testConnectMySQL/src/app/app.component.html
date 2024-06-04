@@ -1,0 +1,24 @@
+<div class="container mt-3">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/customers">Customers</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/products">Products</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Actions</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" routerLink="/add-customer">Add new customer</a></li>
+        <li><a class="dropdown-item" routerLink="/add-product">Add new Product</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<router-outlet>
+
+</router-outlet>

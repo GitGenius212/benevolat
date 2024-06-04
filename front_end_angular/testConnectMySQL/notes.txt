@@ -1,0 +1,12 @@
+1. ERROR MESSAGE : Http failure during parsing for http://localhost:8085/edit-user/3
+
+Solution in the server : 
+resp.status(201).send({message : result.message}); instead of  
+resp.status(201).send(result.message); with
+
+const app = express();
+app.use(bodyParser.json());
+
+
+2. Angular 7 : How do I submit file/image along with my reactive form?
+Stackoverflow

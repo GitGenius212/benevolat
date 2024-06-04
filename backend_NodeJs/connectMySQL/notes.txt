@@ -1,0 +1,61 @@
+J'ai travaillé de A-Z
+
+//Commandes-Notes : {
+
+ 1. Vérifiez que la variable secure_file_priv permet l'importation de fichiers. Vous pouvez le vérifier avec la commande suivante : 
+		SHOW VARIABLES LIKE 'secure_file_priv';
+		SELECT @@secure_file_priv;
+				1. Si la commande retourne un chemin, ce chemin est le répertoire sécurisé où MySQL est autorisé à lire et écrire des fichiers.
+				2. Si la commande retourne une valeur vide (NULL), cela signifie qu'il n'y a pas de restriction sur les répertoires de lecture et d'écriture pour MySQL.
+				3. Si la commande retourne une chaîne vide (''), cela signifie que MySQL n'est autorisé à lire ou écrire dans aucun répertoire.
+}
+
+Date : 2024-05-17
+
+{
+
+	Requirement : 
+	To-do : """
+		1. Connecter la bd mysql avec angular
+		2. Tester toutes les déclarations de MYSQL
+		3. Chercher si mysql contient un spring Data comme sping boot ou comme mongoose
+		"""
+	Done :"""
+	1. Afficher les informations de la bd sur la page html
+	"""
+	Proof of concept :
+
+}
+
+Date : 2024-05-23
+
+{
+
+	Requirement : 
+	To-do : """
+		1. Tester toutes les requête mysql avec Squelize
+	Done :"""
+	1. Afficher les informations de la bd sur la page html
+	2. Chercher si mysql contient un spring Data comme sping boot ou comme mongoose
+	3. Tester toutes les déclarations de MYSQL
+	4. Connecter la bd mysql avec angular
+	5. Tester la connexion avec Squelize
+	"""
+	Proof of concept : 
+	"""
+	1. Tester la connexion avec Squelize
+	2. Angular se connecte avec  Nodejs qui se connecte avec la BD
+	"""
+	
+	
+
+}
+
+{
+    "ERRORS" : [
+	  {"command" : "app.use(bodyParser.json({limit: '50mb'}));", "reason" : "Error 413 payload too large when upload image"}, 
+      {"command" :"app.use(express.urlencoded({ limit: '50mb', extended: true }));", "reason": "allows for rich objects and arrays to be encoded into the URL-encoded format."}
+	]
+	 
+
+}

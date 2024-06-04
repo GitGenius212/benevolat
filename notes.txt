@@ -1,0 +1,7 @@
+ERROR :  Changes not staged for commit:   (use "git add <file>..." to update what will be committed)   (use "git restore <file>..." to discard changes in working directory)   (commit or discard the untracked or modified content in submodules)         modified
+
+Solution : 
+Go inside the subfolder that you want to push and run this:
+rm -rf .git
+
+https://stackoverflow.com/questions/10721624/github-changes-not-staged-for-commit

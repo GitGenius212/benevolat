@@ -1,0 +1,32 @@
+<div class="vh-100">
+    <div class="card m-3" *ngIf="product">
+        <div class="card-header"><p class="fw-bold d-inline">Product ID : {{product.ProductID}} </p></div>
+        <div class="card-body">
+            <div class="row g-0">
+                <div class="col-4  ">
+                    <img  class="card-img "  src="data:image/jpeg;base64,{{product.photo}}" alt="Photo of {{product.name}}"/>
+                </div>
+                <div class="col-auto col-6 ms-3">
+                    <h4 class="card-title">{{product.name}}</h4>
+                      <span class="d-flex ">
+                        <p class="fw-bold me-2">Price :</p> 
+                        <p>{{product.price}}$</p>
+                      </span>
+                      <span class="d-flex mb-2">
+                        <p class="fw-bold me-2">Status:</p> 
+                        <p>{{product.type}}</p>
+                      </span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer d-flex justify-content-between">
+            <button type="button" class="bg-primary btn me-3" (click)="returtoProductPage()">Return</button>
+            <button type="button" class="bg-warning btn me-3" (click)="gotopageEdit(product)">Edit</button>
+            <button type="button" class="bg-danger btn" (click)="deleteProduct()">Delete</button>
+        </div>
+    </div>
+
+
+</div>
