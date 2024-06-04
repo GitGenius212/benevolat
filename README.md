@@ -12,10 +12,9 @@ C’est un projet ouvert pour la gestion de n'importe quel bénévolat (Loisirs,
    ./BenevoleProjectPlan\Sqls\test)
 2. Commandes : 
     - Dans le backend Node.js :
-       o npm run dev
+       npm run dev
     - Dans le front end Angular :
-       o ng serve
+       ng serve
 
 ## Notes
-    Vous pouvez ouvrir le backend et le frontend séparément# End git init git add README.md git commit -m first commit git branch -M main git remote add origin https://github.com/GitGenius212/benevolat.git git push -u origin main
-# benevolat
+    Vous pouvez ouvrir le backend et le frontend séparément pour plus de visibility. 
