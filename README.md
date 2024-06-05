@@ -10,9 +10,13 @@ C’est un projet ouvert pour la gestion de n'importe quel bénévolat (Loisirs,
 ## Démarrer le projet
 1. Connexion avec la bd MYSQL(Xampp, workbench, ect...)  réussi (les requêtes de création et d'insértion sont dans
    ./BenevoleProjectPlan\Sqls\test)
-2. Commandes : 
+   Mon projet utilise le package mysql pour la table Customer et le package squelize pour la table product. J'utilise
+   le port 3307.
+   Configuration de la connexion avec mysql dans le fichier index.ts et pour squelize dans product.model.ts
+    
+3. Commandes : 
     - Dans le backend Node.js :
-       npm run dev
+       npm start
     - Dans le front end Angular :
        ng serve
 
