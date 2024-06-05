@@ -5,3 +5,10 @@ Go inside the subfolder that you want to push and run this:
 rm -rf .git
 
 https://stackoverflow.com/questions/10721624/github-changes-not-staged-for-commit
+
+
+
+ERROR : node_modules who is in the project angular is refused by git to send it to the github project
+
+1 Go the .gitignore  
+2. Delete or comment /node_modules
