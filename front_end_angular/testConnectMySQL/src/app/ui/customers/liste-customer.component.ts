@@ -12,7 +12,7 @@ import { error } from 'console';
 export class ListeCustomerComponent implements OnInit{
   //Attributs-----------------------------------------
   customers! : any[];
-  //Constructeur------------------------------------------
+  //Constructeur---------------------------------------
   ngOnInit(): void {
     this.getCustomers();
   }
