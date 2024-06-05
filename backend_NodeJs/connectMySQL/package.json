@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node .\\node_modules\\typescript\\bin\\tsc && node dist\\index.js",
+    "start": "node .\\node_modules\\typescript\\bin\\tsc && node dist\\index.js",
     "dev": "node .\\node_modules\\concurrently\\dist\\bin\\concurrently.js -n \"TS, Node \" \"node .\\node_modules\\typescript\\bin\\tsc --watch \" \"node .\\node_modules\\nodemon\\bin\\nodemon.js dist/index.js \""
   },
   "keywords": [],
