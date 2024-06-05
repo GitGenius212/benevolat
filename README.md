@@ -14,10 +14,10 @@ C’est un projet ouvert pour la gestion de n'importe quel bénévolat (Loisirs,
    Configuration de la connexion avec mysql dans le fichier index.ts et pour squelize dans product.model.ts
     
 3. Commandes : 
-    - Dans le backend Node.js :
+    - Dans le backend Node.js benevolat_server :
        npm start
-    - Dans le front end Angular :
+    - Dans le front end Angular benevolat_ang :
        ng serve
 
 ## Notes
-    Vous pouvez ouvrir le backend et le frontend séparément pour plus de visibility. 
+ Vous pouvez ouvrir le backend et le frontend séparément pour plus de visibility. 
