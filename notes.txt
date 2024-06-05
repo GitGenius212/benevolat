@@ -12,3 +12,4 @@ ERROR : node_modules who is in the project angular is refused by git to send it 
 
 1 Go the .gitignore  
 2. Delete or comment /node_modules
+3. After you can remove the comment if you wish
