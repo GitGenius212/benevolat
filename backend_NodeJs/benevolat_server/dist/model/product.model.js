@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_1 = require("sequelize");
 //The connection with Squelize==========================
-const sequelize = new sequelize_1.Sequelize('test', 'root', 'test', {
+const sequelize = new sequelize_1.Sequelize('benevolatDB', 'root', 'test', {
     host: 'localhost',
     dialect: 'mysql',
     port: 3307

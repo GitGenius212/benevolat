@@ -20,7 +20,7 @@ CREATE TABLE Address (
     municipalNumber VARCHAR(255) NOT NULL,
 	street VARCHAR(255) NOT NULL,  
 	city VARCHAR(255) NOT NULL, 
-	state VARCHAR(255), 
+	state_address VARCHAR(255), 
 	zipCode VARCHAR(255) NOT NULL, 
 	country CHAR(2) NOT NULL, 
 	PRIMARY KEY (AddressID)
@@ -55,9 +55,10 @@ CREATE TABLE `ORDER` (
 
 CREATE TABLE OrderDetail (
     quantity INT NOT NULL,
-    id_command INT NOT NULL,
+    id_order INT NOT NULL,
 	id_product INT NOT NULL, 
-    FOREIGN KEY (id_command) REFERENCES `ORDER`(OrderID), 
+	PRIMARY KEY(id_product, id_order), 
+    FOREIGN KEY (id_order) REFERENCES `ORDER`(OrderID), 
 	FOREIGN KEY (id_product) REFERENCES Product(ProductID)
  
 );

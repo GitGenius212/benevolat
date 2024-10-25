@@ -1,6 +1,6 @@
 import { Sequelize, DataTypes, Model } from 'sequelize';
 //The connection with Squelize==========================
-const sequelize = new Sequelize('test', 'root', 'test', {
+const sequelize = new Sequelize('benevolatDB', 'root', 'test', {
     host: 'localhost',
     dialect: 'mysql', 
     port : 3307 
