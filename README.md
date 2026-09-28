@@ -4,7 +4,7 @@ Ce project a été généré avec [Angular CLI](https://github.com/angular/angul
 
 ## Description
 
-C’est un projet ouvert pour la gestion de n'importe quel bénévolat (Loisirs, vente, arrangement, ect…). Les différents utilisateurs seront la possibilité aux clients de commander leur produit souhaité, les distributeurs de produits qui peuvent être des bénévoles ou pas, des gestionnaires de produits et le directeur qui guide les autres.  
+C’est un projet ouvert pour la gestion de n'importe quel bénévolat (Loisirs, vente, arrangement, ect…). Les différents utilisateurs auront la possibilité aux clients de commander leur produit souhaité, les distributeurs de produits qui peuvent être des bénévoles ou pas, des gestionnaires de produits et le directeur qui guide les autres.  
  
 
 ## Démarrer le projet
